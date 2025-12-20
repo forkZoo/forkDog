@@ -49,37 +49,39 @@
     </linearGradient>
     <clipPath id="head-clip"><ellipse cx="200" cy="200" rx="110" ry="115"/></clipPath>
 </defs>
-<rect width="400" height="400" fill="#F8F9FA"/>
+<rect width="400" height="400" fill="url(#sunset-gradient)"/>
 
-<ellipse cx="115" cy="140" rx="45" ry="50" fill="#8B4513" filter="url(#shadow)"/>
+<ellipse cx="115" cy="140" rx="45" ry="50" fill="#9370DB" filter="url(#shadow)"/>
 <ellipse cx="115" cy="140" rx="30" ry="35" fill="#FFB6C1"/>
 <ellipse cx="115" cy="145" rx="18" ry="22" fill="#FF9999"/>
-<ellipse cx="285" cy="140" rx="45" ry="50" fill="#8B4513" filter="url(#shadow)"/>
+<ellipse cx="285" cy="140" rx="45" ry="50" fill="#9370DB" filter="url(#shadow)"/>
 <ellipse cx="285" cy="140" rx="30" ry="35" fill="#FFB6C1"/>
 <ellipse cx="285" cy="145" rx="18" ry="22" fill="#FF9999"/>
-<ellipse cx="200" cy="200" rx="110" ry="115" fill="#8B4513" filter="url(#shadow)"/>
-<ellipse cx="180" cy="140" rx="50" ry="30" fill="#A0522D" opacity="0.3"/>
-<g clip-path="url(#head-clip)"><text x="130" y="130" font-size="16" fill="#FF69B4" opacity="0.4">♥</text><text x="267" y="259" font-size="16" fill="#FF69B4" opacity="0.4">♥</text><text x="264" y="248" font-size="16" fill="#FF69B4" opacity="0.4">♥</text><text x="261" y="237" font-size="16" fill="#FF69B4" opacity="0.4">♥</text><text x="258" y="226" font-size="16" fill="#FF69B4" opacity="0.4">♥</text><text x="255" y="215" font-size="16" fill="#FF69B4" opacity="0.4">♥</text><text x="252" y="204" font-size="16" fill="#FF69B4" opacity="0.4">♥</text></g>
+<ellipse cx="200" cy="200" rx="110" ry="115" fill="#9370DB" filter="url(#shadow)"/>
+<ellipse cx="180" cy="140" rx="50" ry="30" fill="#B19CD9" opacity="0.3"/>
+<g clip-path="url(#head-clip)"><text x="120" y="120" font-size="18" fill="#FFD700" opacity="0.5">★</text><text x="145" y="165" font-size="18" fill="#FFD700" opacity="0.5">★</text><text x="170" y="210" font-size="18" fill="#FFD700" opacity="0.5">★</text><text x="195" y="255" font-size="18" fill="#FFD700" opacity="0.5">★</text><text x="220" y="140" font-size="18" fill="#FFD700" opacity="0.5">★</text><text x="245" y="185" font-size="18" fill="#FFD700" opacity="0.5">★</text><text x="270" y="230" font-size="18" fill="#FFD700" opacity="0.5">★</text><text x="135" y="275" font-size="18" fill="#FFD700" opacity="0.5">★</text></g>
 <ellipse cx="200" cy="235" rx="70" ry="60" fill="#FFDAB9"/>
 <ellipse cx="200" cy="250" rx="55" ry="40" fill="#DEB887" opacity="0.3"/>
 <ellipse cx="162" cy="185" rx="22" ry="24" fill="#000" opacity="0.08"/>
 <ellipse cx="238" cy="185" rx="22" ry="24" fill="#000" opacity="0.08"/>
-<ellipse cx="162" cy="185" rx="18" ry="20" fill="white"/>
-<circle cx="162" cy="185" r="12" fill="#3D2314"/>
-<circle cx="162" cy="185" r="6" fill="#000"/>
-<circle cx="166" cy="181" r="4" fill="white"/>
-<ellipse cx="238" cy="185" rx="18" ry="20" fill="white"/>
-<circle cx="238" cy="185" r="12" fill="#3D2314"/>
-<circle cx="238" cy="185" r="6" fill="#000"/>
-<circle cx="242" cy="181" r="4" fill="white"/>
+<ellipse cx="162" cy="185" rx="20" ry="24" fill="white"/>
+<circle cx="162" cy="185" r="14" fill="#3D2314"/>
+<circle cx="162" cy="185" r="8" fill="#000"/>
+<circle cx="167" cy="180" r="5" fill="white"/>
+<ellipse cx="238" cy="185" rx="20" ry="24" fill="white"/>
+<circle cx="238" cy="185" r="14" fill="#3D2314"/>
+<circle cx="238" cy="185" r="8" fill="#000"/>
+<circle cx="243" cy="180" r="5" fill="white"/>
 <g>
             <ellipse cx="200" cy="230" rx="25" ry="18" fill="#8B4513"/>
             <ellipse cx="200" cy="230" rx="22" ry="15" fill="#A0522D"/>
             <ellipse cx="192" cy="230" rx="5" ry="7" fill="#5D2E0C"/>
             <ellipse cx="208" cy="230" rx="5" ry="7" fill="#5D2E0C"/>
         </g>
-<line x1="182" y1="260" x2="218" y2="260" stroke="#5D2E0C" stroke-width="2"/>
-<ellipse cx="130" cy="130" rx="20" ry="15" fill="#FF69B4"/><ellipse cx="130" cy="130" rx="8" ry="8" fill="#FF1493"/><polygon points="130,115 145,130 130,145" fill="#FF69B4"/>
+<ellipse cx="200" cy="265" rx="16" ry="22" fill="#8B0000"/>
+<path d="M147 160 Q162 150 177 160" stroke="#5D2E0C" stroke-width="3" fill="none"/>
+<path d="M223 160 Q238 150 253 160" stroke="#5D2E0C" stroke-width="3" fill="none"/>
+<path d="M140 110 Q120 50 150 40" stroke="#8B0000" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M260 110 Q280 50 250 40" stroke="#8B0000" stroke-width="12" fill="none" stroke-linecap="round"/>
 
 <g transform="translate(325, 15)">
             <rect width="65" height="22" rx="4" fill="#A0A0A0" opacity="0.9"/>
