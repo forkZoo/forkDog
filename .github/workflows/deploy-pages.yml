@@ -7,12 +7,12 @@ on:
       - main
     paths:
       - 'web/**'
-      - 'monkey_data/**'
+      - 'dog_data/**'
       - '.github/workflows/deploy-pages.yml'
   
   # Also trigger after daily evolution completes
   workflow_run:
-    workflows: ["Daily Evolution", "Initialize New Monkey"]
+    workflows: ["Daily Evolution", "Initialize New Dog"]
     types:
       - completed
     branches:
@@ -51,11 +51,11 @@ jobs:
           git checkout main
           git pull origin main
       
-      - name: Copy monkey data to web
+      - name: Copy dog data to web
         run: |
-          # Copy monkey_data to web folder so it's accessible
-          cp -r monkey_data web/monkey_data
-          echo "📁 Copied monkey_data to web folder"
+          # Copy dog_data to web folder so it's accessible
+          cp -r dog_data web/dog_data
+          echo "📁 Copied dog_data to web folder"
           ls -la web/
 
       - name: Setup Pages
@@ -83,4 +83,4 @@ jobs:
       - name: Show deployment URL
         run: |
           echo "🌐 Deployed to: ${{ steps.deployment.outputs.page_url }}"
-          echo "🐵 Your monkey is now live!"
+          echo "🐵 Your dog is now live!"

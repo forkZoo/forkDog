@@ -35,32 +35,32 @@ jobs:
         run: |
           pip install -r requirements.txt
       
-      - name: Check if monkey exists
-        id: check_monkey
+      - name: Check if dog exists
+        id: check_dog
         run: |
-          if [ -f "monkey_data/dna.json" ]; then
+          if [ -f "dog_data/dna.json" ]; then
             echo "exists=true" >> $GITHUB_OUTPUT
           else
             echo "exists=false" >> $GITHUB_OUTPUT
           fi
       
-      - name: Initialize monkey (first time)
-        if: steps.check_monkey.outputs.exists == 'false'
+      - name: Initialize dog (first time)
+        if: steps.check_dog.outputs.exists == 'false'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          echo "🐵 First time setup - initializing monkey..."
+          echo "🐵 First time setup - initializing dog..."
           python src/cli.py init --from-fork
       
-      - name: Evolve monkey
-        if: steps.check_monkey.outputs.exists == 'true'
+      - name: Evolve dog
+        if: steps.check_dog.outputs.exists == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          echo "🧬 Evolving monkey..."
+          echo "🧬 Evolving dog..."
           if [ "${{ github.event.inputs.use_ai }}" = "true" ] || [ -z "${{ github.event.inputs.use_ai }}" ]; then
             python src/cli.py evolve --ai
           else
@@ -77,7 +77,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add monkey_data/ README.md
+          git add dog_data/ README.md
           
           if git diff --staged --quiet; then
             echo "No changes to commit"
@@ -86,7 +86,7 @@ jobs:
             git push
           fi
       
-      - name: Show monkey stats
+      - name: Show dog stats
         run: |
-          echo "📊 Current monkey stats:"
+          echo "📊 Current dog stats:"
           python src/cli.py show

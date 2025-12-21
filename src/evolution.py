@@ -1,5 +1,5 @@
 """
-ForkMonkey Evolution Engine
+ForkDog Evolution Engine
 
 AI-powered evolution using LLMs to make intelligent mutations.
 Supports multiple providers:
@@ -11,7 +11,7 @@ import os
 import json
 import abc
 from typing import Optional, Dict, Any, List
-from src.genetics import MonkeyDNA, GeneticsEngine, TraitCategory
+from src.genetics import DogDNA, GeneticsEngine, TraitCategory
 
 
 class AIProvider(abc.ABC):
@@ -72,7 +72,7 @@ class GitHubProvider(AIProvider):
 
 
 class EvolutionAgent:
-    """AI agent that evolves monkeys intelligently"""
+    """AI agent that evolves dogs intelligently"""
     
     def __init__(self, provider_type: str = "github", api_key: Optional[str] = None):
         self.provider = self._setup_provider(provider_type, api_key)
@@ -99,9 +99,9 @@ class EvolutionAgent:
         else:
             raise ValueError(f"Unknown provider type: {provider_type}")
     
-    def evolve_with_ai(self, dna: MonkeyDNA, days_passed: int = 1) -> MonkeyDNA:
+    def evolve_with_ai(self, dna: DogDNA, days_passed: int = 1) -> DogDNA:
         """
-        Use AI to intelligently evolve the monkey
+        Use AI to intelligently evolve the dog
         """
         print(f"🧠 Evolving with {self.provider.name()}...")
         
@@ -136,11 +136,11 @@ class EvolutionAgent:
     
     def _create_evolution_prompt(self, traits: dict, days: int, generation: int) -> str:
         """Create prompt for AI"""
-        return f"""You are an AI evolution agent for ForkMonkey - a digital pet that lives on GitHub.
+        return f"""You are an AI evolution agent for ForkDog - a digital pet that lives on GitHub.
 
-Your task is to evolve this monkey's appearance in a subtle, aesthetically pleasing way.
+Your task is to evolve this dog's appearance in a subtle, aesthetically pleasing way.
 
-Current Monkey Traits:
+Current Dog Traits:
 {json.dumps(traits, indent=2)}
 
 Context:
@@ -174,10 +174,10 @@ Respond with a JSON object ONLY (no markdown formatting) indicating which traits
       "reason": "Subtle shift to warmer tone"
     }}
   ],
-  "evolution_story": "Your monkey is maturing, developing a golden sheen..."
+  "evolution_story": "Your dog is maturing, developing a golden sheen..."
 }}
 
-Keep changes minimal (0-2 traits). Consider the monkey's current aesthetic."""
+Keep changes minimal (0-2 traits). Consider the dog's current aesthetic."""
     
     def _parse_ai_response(self, response_text: str) -> dict:
         """Parse AI response"""
@@ -198,7 +198,7 @@ Keep changes minimal (0-2 traits). Consider the monkey's current aesthetic."""
             print(f"Raw response: {response_text[:100]}...")
             return {"changes": [], "evolution_story": "No changes today."}
     
-    def _apply_evolution(self, dna: MonkeyDNA, decision: dict) -> MonkeyDNA:
+    def _apply_evolution(self, dna: DogDNA, decision: dict) -> DogDNA:
         """Apply AI-decided evolution"""
         from src.genetics import Trait, Rarity
         
@@ -225,7 +225,7 @@ Keep changes minimal (0-2 traits). Consider the monkey's current aesthetic."""
                 print(f"⚠️  Failed to apply change: {e}")
         
         # Create evolved DNA
-        evolved = MonkeyDNA(
+        evolved = DogDNA(
             generation=dna.generation,
             parent_id=dna.parent_id,
             traits=new_traits,
@@ -235,7 +235,7 @@ Keep changes minimal (0-2 traits). Consider the monkey's current aesthetic."""
         
         return evolved
     
-    def generate_evolution_story(self, old_dna: MonkeyDNA, new_dna: MonkeyDNA) -> str:
+    def generate_evolution_story(self, old_dna: DogDNA, new_dna: DogDNA) -> str:
         """Generate a story about the evolution"""
         
         changes = []
@@ -247,9 +247,9 @@ Keep changes minimal (0-2 traits). Consider the monkey's current aesthetic."""
                 changes.append(f"{category.value}: {old_trait.value} → {new_trait.value}")
         
         if not changes:
-            return "Your monkey rested today. No visible changes."
+            return "Your dog rested today. No visible changes."
         
-        prompt = f"""Generate a short, whimsical story (2-3 sentences) about a monkey's evolution.
+        prompt = f"""Generate a short, whimsical story (2-3 sentences) about a dog's evolution.
 
 Changes that occurred:
 {chr(10).join(changes)}
@@ -259,14 +259,14 @@ Make it fun and engaging, like a Tamagotchi update message."""
         try:
             return self.provider.generate_response(prompt, max_tokens=256).strip()
         except:
-            return f"Your monkey evolved! Changes: {', '.join(changes)}"
+            return f"Your dog evolved! Changes: {', '.join(changes)}"
 
 
 def main():
     """Test evolution agent"""
     from src.genetics import GeneticsEngine
     
-    print("🧬 ForkMonkey Evolution Agent Test\n")
+    print("🧬 ForkDog Evolution Agent Test\n")
     
     # Determine provider
     provider = os.getenv("AI_PROVIDER", "github")
@@ -278,7 +278,7 @@ def main():
         print(f"⚠️  Failed to initialize agent: {e}")
         return
     
-    print("1. Generating random monkey...")
+    print("1. Generating random dog...")
     dna = GeneticsEngine.generate_random_dna()
     
     print("\n2. Evolving with AI...")

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForkMonkey - Cyberpunk Edition</title>
+    <title>ForkDog - Cyberpunk Edition</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
         <header class="header glass-panel">
             <div class="logo-container">
                 <div class="pixel-icon">🐵</div>
-                <h1 class="title">FORKMONKEY</h1>
+                <h1 class="title">FORKDOG</h1>
             </div>
             <div class="header-stats">
                 <div class="stat-badge">
@@ -43,20 +43,20 @@
 
         <!-- Main content grid -->
         <div class="content-grid">
-            <!-- Left panel - Monkey display -->
-            <div class="panel monkey-panel glass-panel">
+            <!-- Left panel - Dog display -->
+            <div class="panel dog-panel glass-panel">
                 <div class="panel-header">
-                    <h2>YOUR MONKEY</h2>
+                    <h2>YOUR DOG</h2>
                     <div class="dna-hash" id="dna-hash">Loading...</div>
                 </div>
-                <div class="monkey-display">
-                    <div class="monkey-container" id="monkey-svg">
+                <div class="dog-display">
+                    <div class="dog-container" id="dog-svg">
                         <!-- SVG will be loaded here -->
                         <div class="loading-spinner">
                             <p>INITIALIZING SEQUENCE...</p>
                         </div>
                     </div>
-                    <div class="monkey-info">
+                    <div class="dog-info">
                         <div class="info-row">
                             <span class="info-label">Mutations</span>
                             <span class="info-value" id="mutations">0</span>
@@ -73,7 +73,7 @@
             <div class="panel traits-panel glass-panel">
                 <div class="panel-header">
                     <h2>TRAITS</h2>
-                    <button class="nes-btn refresh-btn" onclick="loadMonkeyData()">
+                    <button class="nes-btn refresh-btn" onclick="loadDogData()">
                         <span>↻</span>
                     </button>
                 </div>
@@ -104,7 +104,7 @@
                     <a href="https://github.com" class="nes-btn" target="_blank">
                         <span>GITHUB</span>
                     </a>
-                    <button class="nes-btn" onclick="downloadMonkey()">
+                    <button class="nes-btn" onclick="downloadDog()">
                         <span>DOWNLOAD DNA</span>
                     </button>
                 </div>

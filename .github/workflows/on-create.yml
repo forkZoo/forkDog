@@ -1,4 +1,4 @@
-name: Initialize New Monkey
+name: Initialize New Dog
 
 on:
   # Trigger when repository is created from template (Actions enabled automatically!)
@@ -31,12 +31,12 @@ jobs:
         run: |
           pip install -r requirements.txt
       
-      - name: Initialize child monkey from parent
+      - name: Initialize child dog from parent
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
-          echo "🐵 New monkey detected! Initializing..."
+          echo "🐵 New dog detected! Initializing..."
           python src/cli.py init --from-fork
       
       - name: Update README
@@ -44,18 +44,18 @@ jobs:
           echo "📝 Updating README..."
           python src/cli.py update-readme
       
-      - name: Commit initial monkey
+      - name: Commit initial dog
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          git add monkey_data/ README.md
-          git commit -m "🐵 Initialize monkey" || echo "No changes to commit"
+          git add dog_data/ README.md
+          git commit -m "🐵 Initialize dog" || echo "No changes to commit"
           git push
       
-      - name: Show new monkey
+      - name: Show new dog
         run: |
-          echo "👶 Your new monkey:"
+          echo "👶 Your new dog:"
           python src/cli.py show
       
       - name: Create welcome issue
@@ -63,14 +63,14 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const body = `## 🐵 Your Monkey is Born!
+            const body = `## 🐵 Your Dog is Born!
             
-            Congratulations! You've created your own ForkMonkey.
+            Congratulations! You've created your own ForkDog.
             
             ### What happens now?
             
-            1. **Daily Evolution**: Your monkey evolves automatically every day at midnight UTC
-            2. **GitHub Pages**: View your monkey at \`https://${context.repo.owner}.github.io/${context.repo.repo}/\`
+            1. **Daily Evolution**: Your dog evolves automatically every day at midnight UTC
+            2. **GitHub Pages**: View your dog at \`https://${context.repo.owner}.github.io/${context.repo.repo}/\`
             3. **AI-Powered**: Add ANTHROPIC_API_KEY secret for intelligent evolution
             
             ### Setup (Optional)
@@ -78,18 +78,18 @@ jobs:
             1. Go to **Settings → Secrets → Actions**
             2. Add secret: \`ANTHROPIC_API_KEY\` (from https://console.anthropic.com)
             
-            > **📢 Keep this repo PUBLIC** for GitHub Pages to work and to share your monkey with the world!
+            > **📢 Keep this repo PUBLIC** for GitHub Pages to work and to share your dog with the world!
             
-            ### Your Monkey
+            ### Your Dog
             
-            Check the README to see your monkey's current appearance and traits!
+            Check the README to see your dog's current appearance and traits!
             
-            Happy monkey growing! 🌱`;
+            Happy dog growing! 🌱`;
             
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: '🎉 Welcome to ForkMonkey!',
+              title: '🎉 Welcome to ForkDog!',
               body: body
             });
 

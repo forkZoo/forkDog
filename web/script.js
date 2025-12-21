@@ -1,4 +1,4 @@
-// ForkMonkey Web Interface
+// ForkDog Web Interface
 
 // Initialize particles background
 // Initialize particles background
@@ -57,17 +57,17 @@ const rarityColors = {
     legendary: '#ffd700'
 };
 
-// Load monkey data
-async function loadMonkeyData() {
+// Load dog data
+async function loadDogData() {
     try {
         // Show loading state
         document.body.classList.add('loading');
 
         // Determine base path based on environment
-        // - GitHub Pages: use relative path (monkey_data copied to web folder)
+        // - GitHub Pages: use relative path (dog_data copied to web folder)
         // - Local server: use root path
         const isGitHubPages = window.location.hostname.includes('github.io');
-        const basePath = isGitHubPages ? 'monkey_data/' : '/monkey_data/';
+        const basePath = isGitHubPages ? 'dog_data/' : '/dog_data/';
 
         // Load DNA
         const dnaResponse = await fetch(basePath + 'dna.json');
@@ -85,13 +85,13 @@ async function loadMonkeyData() {
         const history = await historyResponse.json();
 
         // Load SVG
-        const svgResponse = await fetch(basePath + 'monkey.svg');
+        const svgResponse = await fetch(basePath + 'dog.svg');
         if (!svgResponse.ok) throw new Error('SVG file not found');
         const svgText = await svgResponse.text();
 
         // Update UI
         updateHeader(dna, stats);
-        updateMonkeyDisplay(svgText, dna, stats);
+        updateDogDisplay(svgText, dna, stats);
         updateTraits(dna.traits);
         updateHistory(history.entries || []);
 
@@ -99,8 +99,8 @@ async function loadMonkeyData() {
         document.body.classList.remove('loading');
 
     } catch (error) {
-        console.error('Error loading monkey data:', error);
-        showError('Failed to load monkey data. Make sure you have initialized a monkey first!');
+        console.error('Error loading dog data:', error);
+        showError('Failed to load dog data. Make sure you have initialized a dog first!');
     }
 }
 
@@ -111,9 +111,9 @@ function updateHeader(dna, stats) {
     document.getElementById('rarity').textContent = `${(stats.rarity_score || 0).toFixed(1)}%`;
 }
 
-// Update monkey display
-function updateMonkeyDisplay(svgText, dna, stats) {
-    const container = document.getElementById('monkey-svg');
+// Update dog display
+function updateDogDisplay(svgText, dna, stats) {
+    const container = document.getElementById('dog-svg');
     container.innerHTML = svgText;
 
     document.getElementById('dna-hash').textContent = dna.dna_hash || 'Unknown';
@@ -176,7 +176,7 @@ function updateHistory(entries) {
     if (entries.length === 0) {
         timeline.innerHTML = `
             <div class="nes-container is-rounded">
-                <p>No evolution history yet. Your monkey will evolve daily!</p>
+                <p>No evolution history yet. Your dog will evolve daily!</p>
             </div>
         `;
         return;
@@ -223,11 +223,11 @@ function createHistoryEntry(entry) {
     return div;
 }
 
-// Download monkey SVG
-function downloadMonkey() {
-    const svgElement = document.querySelector('#monkey-svg svg');
+// Download dog SVG
+function downloadDog() {
+    const svgElement = document.querySelector('#dog-svg svg');
     if (!svgElement) {
-        alert('No monkey to download!');
+        alert('No dog to download!');
         return;
     }
 
@@ -237,7 +237,7 @@ function downloadMonkey() {
 
     const link = document.createElement('a');
     link.href = url;
-    link.download = `forkmonkey-${Date.now()}.svg`;
+    link.download = `forkdog-${Date.now()}.svg`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -246,7 +246,7 @@ function downloadMonkey() {
 
 // Show error message
 function showError(message) {
-    const container = document.getElementById('monkey-svg');
+    const container = document.getElementById('dog-svg');
     container.innerHTML = `
         <div class="nes-container is-rounded is-dark">
             <p style="color: #ff6b9d;">${message}</p>
@@ -261,7 +261,7 @@ let autoRefreshInterval;
 
 function startAutoRefresh() {
     autoRefreshInterval = setInterval(() => {
-        loadMonkeyData();
+        loadDogData();
     }, 60000); // 60 seconds
 }
 
@@ -275,22 +275,22 @@ function stopAutoRefresh() {
 document.addEventListener('keydown', (e) => {
     // R key to refresh
     if (e.key === 'r' || e.key === 'R') {
-        loadMonkeyData();
+        loadDogData();
     }
 
     // D key to download
     if (e.key === 'd' || e.key === 'D') {
-        downloadMonkey();
+        downloadDog();
     }
 });
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
-    loadMonkeyData();
+    loadDogData();
     startAutoRefresh();
 
     // Add visual feedback for loading
-    console.log('%c🐵 ForkMonkey Web Interface Loaded!', 'color: #00ff88; font-size: 20px; font-weight: bold;');
+    console.log('%c🐵 ForkDog Web Interface Loaded!', 'color: #00ff88; font-size: 20px; font-weight: bold;');
     console.log('%cKeyboard shortcuts:', 'color: #ffd93d; font-weight: bold;');
     console.log('%c  R - Refresh data', 'color: #fff;');
     console.log('%c  D - Download SVG', 'color: #fff;');
@@ -302,10 +302,10 @@ document.addEventListener('visibilitychange', () => {
         stopAutoRefresh();
     } else {
         startAutoRefresh();
-        loadMonkeyData();
+        loadDogData();
     }
 });
 
 // Export functions for global access
-window.loadMonkeyData = loadMonkeyData;
-window.downloadMonkey = downloadMonkey;
+window.loadDogData = loadDogData;
+window.downloadDog = downloadDog;

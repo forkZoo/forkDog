@@ -1,5 +1,5 @@
 """
-ForkMonkey Storage
+ForkDog Storage
 
 Handles DNA storage in GitHub Secrets and history in files.
 """
@@ -11,17 +11,17 @@ from typing import Optional, Dict, List
 from datetime import datetime
 from pathlib import Path
 from github import Github, GithubException
-from src.genetics import MonkeyDNA, GeneticsEngine
+from src.genetics import DogDNA, GeneticsEngine
 
 
-class MonkeyStorage:
-    """Manages monkey data storage"""
+class DogStorage:
+    """Manages dog data storage"""
     
     def __init__(self, repo_name: Optional[str] = None, github_token: Optional[str] = None):
         self.repo_name = repo_name or os.getenv("GITHUB_REPOSITORY") or "test/repo"
         self.github_token = github_token or os.getenv("GITHUB_TOKEN")
         
-        self.data_dir = Path("monkey_data")
+        self.data_dir = Path("dog_data")
         self.data_dir.mkdir(exist_ok=True)
         
         # Initialize GitHub client if token available
@@ -34,7 +34,7 @@ class MonkeyStorage:
             except Exception as e:
                 print(f"⚠️  GitHub API not available: {e}")
     
-    def save_dna_to_secrets(self, dna: MonkeyDNA) -> bool:
+    def save_dna_to_secrets(self, dna: DogDNA) -> bool:
         """
         Save DNA to GitHub Secrets (private, only owner can see)
         
@@ -63,7 +63,7 @@ class MonkeyStorage:
             print(f"⚠️  Failed to save to secrets: {e}")
             return self.save_dna_locally(dna)
     
-    def save_dna_locally(self, dna: MonkeyDNA) -> bool:
+    def save_dna_locally(self, dna: DogDNA) -> bool:
         """Save DNA to local file"""
         try:
             dna_dict = GeneticsEngine.dna_to_dict(dna)
@@ -79,7 +79,7 @@ class MonkeyStorage:
             print(f"❌ Failed to save DNA: {e}")
             return False
     
-    def load_dna(self) -> Optional[MonkeyDNA]:
+    def load_dna(self) -> Optional[DogDNA]:
         """Load DNA from local file"""
         try:
             dna_file = self.data_dir / "dna.json"
@@ -99,7 +99,7 @@ class MonkeyStorage:
             print(f"❌ Failed to load DNA: {e}")
             return None
     
-    def save_history_entry(self, dna: MonkeyDNA, story: str = "") -> bool:
+    def save_history_entry(self, dna: DogDNA, story: str = "") -> bool:
         """Add entry to evolution history"""
         try:
             history_file = self.data_dir / "history.json"
@@ -155,8 +155,8 @@ class MonkeyStorage:
             print(f"❌ Failed to load history: {e}")
             return []
     
-    def save_stats(self, dna: MonkeyDNA, age_days: int = 0) -> bool:
-        """Save monkey statistics"""
+    def save_stats(self, dna: DogDNA, age_days: int = 0) -> bool:
+        """Save dog statistics"""
         try:
             stats = {
                 "dna_hash": dna.dna_hash,
@@ -205,9 +205,9 @@ class MonkeyStorage:
             print(f"⚠️  Failed to detect fork: {e}")
             return None
     
-    def get_parent_dna(self, parent_repo: str) -> Optional[MonkeyDNA]:
+    def get_parent_dna(self, parent_repo: str) -> Optional[DogDNA]:
         """
-        Fetch parent monkey's DNA from parent repository
+        Fetch parent dog's DNA from parent repository
         
         Args:
             parent_repo: Full repo name (owner/repo)
@@ -220,7 +220,7 @@ class MonkeyStorage:
             parent = self.github.get_repo(parent_repo)
             
             # Try to get DNA file from parent
-            content = parent.get_contents("monkey_data/dna.json")
+            content = parent.get_contents("dog_data/dna.json")
             dna_json = content.decoded_content.decode()
             dna_dict = json.loads(dna_json)
             
@@ -230,16 +230,16 @@ class MonkeyStorage:
             print(f"⚠️  Failed to fetch parent DNA: {e}")
             return None
     
-    def initialize_from_parent(self) -> Optional[MonkeyDNA]:
+    def initialize_from_parent(self) -> Optional[DogDNA]:
         """
-        Initialize child monkey from parent (for forks)
+        Initialize child dog from parent (for forks)
         
         Returns child DNA if successful, None otherwise
         """
         parent_repo = self.detect_fork()
         
         if not parent_repo:
-            print("ℹ️  Not a fork, generating new monkey")
+            print("ℹ️  Not a fork, generating new dog")
             return None
         
         print(f"🍴 Fork detected! Parent: {parent_repo}")
@@ -247,7 +247,7 @@ class MonkeyStorage:
         parent_dna = self.get_parent_dna(parent_repo)
         
         if not parent_dna:
-            print("⚠️  Could not fetch parent DNA, generating new monkey")
+            print("⚠️  Could not fetch parent DNA, generating new dog")
             return None
         
         print(f"👶 Breeding child from parent (Generation {parent_dna.generation})")
@@ -255,7 +255,7 @@ class MonkeyStorage:
         # Breed child
         child_dna = GeneticsEngine.breed(parent_dna, mutation_rate=0.3)
         
-        print(f"✅ Child monkey created (Generation {child_dna.generation})")
+        print(f"✅ Child dog created (Generation {child_dna.generation})")
         print(f"   Parent: {parent_dna.dna_hash}")
         print(f"   Child: {child_dna.dna_hash}")
         
@@ -266,12 +266,12 @@ def main():
     """Test storage system"""
     from src.genetics import GeneticsEngine
     
-    print("💾 ForkMonkey Storage Test\n")
+    print("💾 ForkDog Storage Test\n")
     
-    storage = MonkeyStorage()
+    storage = DogStorage()
     
-    # Generate test monkey
-    print("1. Generating test monkey...")
+    # Generate test dog
+    print("1. Generating test dog...")
     dna = GeneticsEngine.generate_random_dna()
     
     # Save DNA
@@ -284,7 +284,7 @@ def main():
     
     # Save history
     print("\n4. Saving history entry...")
-    storage.save_history_entry(dna, "Your monkey was born!")
+    storage.save_history_entry(dna, "Your dog was born!")
     
     # Load DNA
     print("\n5. Loading DNA...")
