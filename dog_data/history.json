@@ -703,6 +703,22 @@
         "special": "aura"
       },
       "story": "Your dog evolved! Changes: pattern: stripes \u2192 spots"
+    },
+    {
+      "timestamp": "2026-01-03T00:50:15.161321",
+      "dna_hash": "d96c77be8ac309e1",
+      "generation": 1,
+      "mutation_count": 6,
+      "rarity_score": 18.333333333333332,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "sleepy",
+        "accessory": "crown",
+        "pattern": "spots",
+        "background": "green_grass",
+        "special": "aura"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
