@@ -1,8 +1,8 @@
 {
-  "dna_hash": "4f70ebc322c52ee5",
+  "dna_hash": "4837b1e5338c48a5",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 11,
+  "mutation_count": 12,
   "rarity_score": 18.333333333333332,
   "parent_id": null,
   "traits": {
@@ -15,7 +15,7 @@
       "rarity": "common"
     },
     "accessory": {
-      "value": "crown",
+      "value": "monocle",
       "rarity": "uncommon"
     },
     "pattern": {
@@ -31,5 +31,5 @@
       "rarity": "rare"
     }
   },
-  "last_updated": "2026-01-13T00:49:21.188069"
+  "last_updated": "2026-01-14T00:55:56.438539"
 }
