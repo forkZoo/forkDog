@@ -1263,6 +1263,22 @@
         "special": "aura"
       },
       "story": "Your dog evolved! Changes: body_color: gray \u2192 tan"
+    },
+    {
+      "timestamp": "2026-02-07T01:01:17.865317",
+      "dna_hash": "5eddfdc44481828f",
+      "generation": 1,
+      "mutation_count": 24,
+      "rarity_score": 20.0,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "excited",
+        "accessory": "monocle",
+        "pattern": "gradient",
+        "background": "blue_sky",
+        "special": "aura"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
