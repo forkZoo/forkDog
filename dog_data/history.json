@@ -1343,6 +1343,22 @@
         "special": "godlike"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-02-11T01:14:50.551198",
+      "dna_hash": "7e914edc29c62074",
+      "generation": 1,
+      "mutation_count": 0,
+      "rarity_score": 35.0,
+      "traits": {
+        "body_color": "blue",
+        "face_expression": "wise",
+        "accessory": "monocle",
+        "pattern": "spots",
+        "background": "white",
+        "special": "godlike"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
