@@ -1615,6 +1615,22 @@
         "special": "none"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-02-24T17:18:01.629116",
+      "dna_hash": "387085621eef98ac",
+      "generation": 1,
+      "mutation_count": 0,
+      "rarity_score": 18.333333333333332,
+      "traits": {
+        "body_color": "pink",
+        "face_expression": "sleepy",
+        "accessory": "sunglasses",
+        "pattern": "solid",
+        "background": "sunset",
+        "special": "none"
+      },
+      "story": "\ud83c\udf89 Your dog was born!"
     }
   ]
 }
