@@ -1,8 +1,8 @@
 {
   "generation": 1,
   "parent_id": null,
-  "dna_hash": "387085621eef98ac",
-  "mutation_count": 0,
+  "dna_hash": "f71cfe3593ecf1b6",
+  "mutation_count": 1,
   "birth_timestamp": 855348,
   "traits": {
     "body_color": {
@@ -11,9 +11,9 @@
       "gene_sequence": "facdd9fe"
     },
     "face_expression": {
-      "value": "sleepy",
+      "value": "neutral",
       "rarity": "common",
-      "gene_sequence": "399185f3"
+      "gene_sequence": "374db983"
     },
     "accessory": {
       "value": "sunglasses",
