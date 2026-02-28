@@ -8,15 +8,15 @@
     </linearGradient>
 </defs>
 <rect width="400" height="400" fill="#F0F8FF"/>
-<ellipse cx="130" cy="160" rx="30" ry="60" fill="#8B4513" transform="rotate(20 130 160)" filter="url(#shadow)"/>
-<ellipse cx="270" cy="160" rx="30" ry="60" fill="#8B4513" transform="rotate(-20 270 160)" filter="url(#shadow)"/>
-<rect x="120" y="120" width="160" height="150" rx="40" fill="#8B4513" filter="url(#shadow)"/>
-<ellipse cx="200" cy="220" rx="50" ry="35" fill="#A0522D" opacity="0.6"/>
+<ellipse cx="130" cy="160" rx="30" ry="60" fill="#808080" transform="rotate(20 130 160)" filter="url(#shadow)"/>
+<ellipse cx="270" cy="160" rx="30" ry="60" fill="#808080" transform="rotate(-20 270 160)" filter="url(#shadow)"/>
+<rect x="120" y="120" width="160" height="150" rx="40" fill="#808080" filter="url(#shadow)"/>
+<ellipse cx="200" cy="220" rx="50" ry="35" fill="#A0A0A0" opacity="0.6"/>
 <circle cx="165" cy="180" r="15" fill="#FFF"/>
 <circle cx="235" cy="180" r="15" fill="#FFF"/>
 <circle cx="165" cy="180" r="8" fill="#000"/>
 <circle cx="235" cy="180" r="8" fill="#000"/>
 <ellipse cx="200" cy="210" rx="20" ry="15" fill="#000"/>
 <ellipse cx="195" cy="205" rx="5" ry="3" fill="#FFF" opacity="0.5"/>
-<path d="M185 230 Q200 245 215 230" stroke="#000" stroke-width="3" fill="none"/>
+<path d="M190 230 Q200 260 210 230" fill="#FF69B4" stroke="#D14785" stroke-width="2"/>
 </svg>
