@@ -1855,6 +1855,22 @@
         "special": "particles"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-03-10T01:00:05.742019",
+      "dna_hash": "abf112d0e3a9b356",
+      "generation": 1,
+      "mutation_count": 7,
+      "rarity_score": 40.0,
+      "traits": {
+        "body_color": "gray",
+        "face_expression": "mischievous",
+        "accessory": "none",
+        "pattern": "nebula",
+        "background": "multiverse",
+        "special": "particles"
+      },
+      "story": "Your dog evolved! Changes: face_expression: curious \u2192 mischievous, accessory: simple_hat \u2192 none"
     }
   ]
 }
