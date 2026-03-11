@@ -1871,6 +1871,22 @@
         "special": "particles"
       },
       "story": "Your dog evolved! Changes: face_expression: curious \u2192 mischievous, accessory: simple_hat \u2192 none"
+    },
+    {
+      "timestamp": "2026-03-11T01:01:09.361459",
+      "dna_hash": "abf112d0e3a9b356",
+      "generation": 1,
+      "mutation_count": 8,
+      "rarity_score": 40.0,
+      "traits": {
+        "body_color": "gray",
+        "face_expression": "mischievous",
+        "accessory": "none",
+        "pattern": "nebula",
+        "background": "multiverse",
+        "special": "particles"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
