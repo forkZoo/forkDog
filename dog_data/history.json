@@ -1903,6 +1903,22 @@
         "special": "particles"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-03-13T01:03:59.763223",
+      "dna_hash": "a453935ecdb70879",
+      "generation": 1,
+      "mutation_count": 9,
+      "rarity_score": 40.0,
+      "traits": {
+        "body_color": "gray",
+        "face_expression": "mischievous",
+        "accessory": "none",
+        "pattern": "nebula",
+        "background": "multiverse",
+        "special": "aura"
+      },
+      "story": "Your dog evolved! Changes: special: particles \u2192 aura"
     }
   ]
 }
