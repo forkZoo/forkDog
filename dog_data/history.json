@@ -2015,6 +2015,22 @@
         "special": "energy"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-03-20T01:05:16.204202",
+      "dna_hash": "88eafbd50dd17651",
+      "generation": 1,
+      "mutation_count": 12,
+      "rarity_score": 40.0,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "mischievous",
+        "accessory": "none",
+        "pattern": "flames",
+        "background": "multiverse",
+        "special": "energy"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
