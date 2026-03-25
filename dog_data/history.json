@@ -2095,6 +2095,22 @@
         "special": "particles"
       },
       "story": "Your dog evolved! Changes: special: energy \u2192 particles"
+    },
+    {
+      "timestamp": "2026-03-25T01:08:04.985436",
+      "dna_hash": "e51500b6bf1eb6ef",
+      "generation": 1,
+      "mutation_count": 16,
+      "rarity_score": 40.0,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "mischievous",
+        "accessory": "none",
+        "pattern": "flames",
+        "background": "multiverse",
+        "special": "particles"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
