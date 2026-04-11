@@ -2367,6 +2367,22 @@
         "special": "shadow"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-04-11T01:12:04.665282",
+      "dna_hash": "c38ba0bbfcd421fc",
+      "generation": 1,
+      "mutation_count": 25,
+      "rarity_score": 35.0,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "mischievous",
+        "accessory": "none",
+        "pattern": "flames",
+        "background": "multiverse",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: background: dimension_rift \u2192 multiverse"
     }
   ]
 }
