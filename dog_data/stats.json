@@ -1,8 +1,8 @@
 {
-  "dna_hash": "c38ba0bbfcd421fc",
+  "dna_hash": "fb5592f0dcaf64ff",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 25,
+  "mutation_count": 26,
   "rarity_score": 35.0,
   "parent_id": null,
   "traits": {
@@ -23,7 +23,7 @@
       "rarity": "rare"
     },
     "background": {
-      "value": "multiverse",
+      "value": "black_hole",
       "rarity": "legendary"
     },
     "special": {
@@ -31,5 +31,5 @@
       "rarity": "uncommon"
     }
   },
-  "last_updated": "2026-04-11T01:12:04.664521"
+  "last_updated": "2026-04-12T01:21:27.596534"
 }
