@@ -2415,6 +2415,22 @@
         "special": "shadow"
       },
       "story": "Your dog evolved! Changes: accessory: none \u2192 simple_hat"
+    },
+    {
+      "timestamp": "2026-04-14T01:21:43.994493",
+      "dna_hash": "7d5e195368fc9c47",
+      "generation": 1,
+      "mutation_count": 27,
+      "rarity_score": 35.0,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "mischievous",
+        "accessory": "simple_hat",
+        "pattern": "flames",
+        "background": "black_hole",
+        "special": "shadow"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
