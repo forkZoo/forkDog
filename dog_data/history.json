@@ -2431,6 +2431,22 @@
         "special": "shadow"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-04-15T01:18:24.881943",
+      "dna_hash": "6072613aab74a8aa",
+      "generation": 1,
+      "mutation_count": 28,
+      "rarity_score": 36.666666666666664,
+      "traits": {
+        "body_color": "copper",
+        "face_expression": "mischievous",
+        "accessory": "simple_hat",
+        "pattern": "flames",
+        "background": "black_hole",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: body_color: tan \u2192 copper"
     }
   ]
 }
