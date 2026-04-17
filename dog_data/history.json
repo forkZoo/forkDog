@@ -2463,6 +2463,22 @@
         "special": "shadow"
       },
       "story": "Your dog evolved! Changes: body_color: copper \u2192 bronze, face_expression: mischievous \u2192 wise"
+    },
+    {
+      "timestamp": "2026-04-17T01:21:15.609994",
+      "dna_hash": "45b832a6e140e2b4",
+      "generation": 1,
+      "mutation_count": 30,
+      "rarity_score": 36.666666666666664,
+      "traits": {
+        "body_color": "bronze",
+        "face_expression": "wise",
+        "accessory": "simple_hat",
+        "pattern": "flames",
+        "background": "black_hole",
+        "special": "shadow"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
