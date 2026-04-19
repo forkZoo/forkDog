@@ -8,10 +8,10 @@
     </linearGradient>
 </defs>
 <rect width="400" height="400" fill="#F0F8FF"/>
-<ellipse cx="130" cy="160" rx="30" ry="60" fill="#8B4513" transform="rotate(20 130 160)" filter="url(#shadow)"/>
-<ellipse cx="270" cy="160" rx="30" ry="60" fill="#8B4513" transform="rotate(-20 270 160)" filter="url(#shadow)"/>
-<rect x="120" y="120" width="160" height="150" rx="40" fill="#8B4513" filter="url(#shadow)"/>
-<ellipse cx="200" cy="220" rx="50" ry="35" fill="#A0522D" opacity="0.6"/>
+<ellipse cx="130" cy="160" rx="30" ry="60" fill="#FFD700" transform="rotate(20 130 160)" filter="url(#shadow)"/>
+<ellipse cx="270" cy="160" rx="30" ry="60" fill="#FFD700" transform="rotate(-20 270 160)" filter="url(#shadow)"/>
+<rect x="120" y="120" width="160" height="150" rx="40" fill="#FFD700" filter="url(#shadow)"/>
+<ellipse cx="200" cy="220" rx="50" ry="35" fill="#FFEC8B" opacity="0.6"/>
 <circle cx="165" cy="180" r="15" fill="#FFF"/>
 <circle cx="235" cy="180" r="15" fill="#FFF"/>
 <circle cx="165" cy="180" r="8" fill="#000"/>
