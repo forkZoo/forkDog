@@ -2639,6 +2639,22 @@
         "special": "shadow"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-04-28T01:47:06.821856",
+      "dna_hash": "63b95611dd94988a",
+      "generation": 1,
+      "mutation_count": 34,
+      "rarity_score": 41.66666666666667,
+      "traits": {
+        "body_color": "pink",
+        "face_expression": "cool",
+        "accessory": "simple_hat",
+        "pattern": "flames",
+        "background": "black_hole",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: face_expression: wise \u2192 cool"
     }
   ]
 }
