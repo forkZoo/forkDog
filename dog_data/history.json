@@ -2719,6 +2719,22 @@
         "special": "shadow"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-05-03T01:44:47.427106",
+      "dna_hash": "8cfdcda5cc3fae57",
+      "generation": 1,
+      "mutation_count": 37,
+      "rarity_score": 36.666666666666664,
+      "traits": {
+        "body_color": "purple",
+        "face_expression": "cool",
+        "accessory": "simple_hat",
+        "pattern": "hearts",
+        "background": "black_hole",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: pattern: fractals \u2192 hearts"
     }
   ]
 }
