@@ -2911,6 +2911,22 @@
         "special": "energy"
       },
       "story": "Your dog evolved! Changes: special: glow \u2192 energy"
+    },
+    {
+      "timestamp": "2026-05-15T01:57:30.047711",
+      "dna_hash": "1b33612d2493057e",
+      "generation": 1,
+      "mutation_count": 47,
+      "rarity_score": 48.333333333333336,
+      "traits": {
+        "body_color": "galaxy",
+        "face_expression": "cool",
+        "accessory": "bandana",
+        "pattern": "gradient",
+        "background": "heaven",
+        "special": "energy"
+      },
+      "story": "Your dog evolved! Changes: accessory: simple_hat \u2192 bandana"
     }
   ]
 }
