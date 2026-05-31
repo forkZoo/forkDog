@@ -3167,6 +3167,22 @@
         "special": "sparkles"
       },
       "story": "Your dog evolved! Changes: body_color: galaxy \u2192 green"
+    },
+    {
+      "timestamp": "2026-05-31T02:09:02.837043",
+      "dna_hash": "80bd4b0e3d77e247",
+      "generation": 1,
+      "mutation_count": 55,
+      "rarity_score": 40.0,
+      "traits": {
+        "body_color": "green",
+        "face_expression": "surprised",
+        "accessory": "bandana",
+        "pattern": "gradient",
+        "background": "heaven",
+        "special": "sparkles"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
