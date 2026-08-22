@@ -4527,6 +4527,22 @@
         "special": "aura"
       },
       "story": "\ud83c\udf89 Your dog was born!"
+    },
+    {
+      "timestamp": "2026-08-22T00:32:24.373667",
+      "dna_hash": "4411db853be46427",
+      "generation": 1,
+      "mutation_count": 1,
+      "rarity_score": 33.33333333333333,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "enlightened",
+        "accessory": "bow",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "aura"
+      },
+      "story": "Your dog evolved! Changes: face_expression: laughing \u2192 enlightened"
     }
   ]
 }
