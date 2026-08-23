@@ -4543,6 +4543,22 @@
         "special": "aura"
       },
       "story": "Your dog evolved! Changes: face_expression: laughing \u2192 enlightened"
+    },
+    {
+      "timestamp": "2026-08-23T00:35:02.319000",
+      "dna_hash": "4411db853be46427",
+      "generation": 1,
+      "mutation_count": 1,
+      "rarity_score": 33.33333333333333,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "enlightened",
+        "accessory": "bow",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "aura"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
