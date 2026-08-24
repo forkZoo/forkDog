@@ -4559,6 +4559,22 @@
         "special": "aura"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-08-24T00:34:01.885031",
+      "dna_hash": "6eab220bd55c9f69",
+      "generation": 1,
+      "mutation_count": 3,
+      "rarity_score": 33.33333333333333,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "enlightened",
+        "accessory": "bandana",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "particles"
+      },
+      "story": "Your dog evolved! Changes: accessory: bow \u2192 bandana, special: aura \u2192 particles"
     }
   ]
 }
