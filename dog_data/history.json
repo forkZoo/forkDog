@@ -4575,6 +4575,22 @@
         "special": "particles"
       },
       "story": "Your dog evolved! Changes: accessory: bow \u2192 bandana, special: aura \u2192 particles"
+    },
+    {
+      "timestamp": "2026-08-25T00:33:32.672674",
+      "dna_hash": "ebf964aceae17643",
+      "generation": 1,
+      "mutation_count": 4,
+      "rarity_score": 33.33333333333333,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "cosmic",
+        "accessory": "bandana",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "particles"
+      },
+      "story": "Your dog evolved! Changes: face_expression: enlightened \u2192 cosmic"
     }
   ]
 }
