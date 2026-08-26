@@ -4591,6 +4591,22 @@
         "special": "particles"
       },
       "story": "Your dog evolved! Changes: face_expression: enlightened \u2192 cosmic"
+    },
+    {
+      "timestamp": "2026-08-26T00:34:30.247091",
+      "dna_hash": "ebf964aceae17643",
+      "generation": 1,
+      "mutation_count": 4,
+      "rarity_score": 33.33333333333333,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "cosmic",
+        "accessory": "bandana",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "particles"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
