@@ -4751,6 +4751,22 @@
         "special": "glow"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-09-05T01:44:59.685114",
+      "dna_hash": "c520f0601bd2b6f2",
+      "generation": 1,
+      "mutation_count": 11,
+      "rarity_score": 28.333333333333332,
+      "traits": {
+        "body_color": "tan",
+        "face_expression": "legendary",
+        "accessory": "none",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: face_expression: cosmic \u2192 legendary, special: glow \u2192 shadow"
     }
   ]
 }
