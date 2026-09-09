@@ -4815,6 +4815,22 @@
         "special": "shadow"
       },
       "story": "Your dog evolved! Changes: body_color: tan \u2192 beige"
+    },
+    {
+      "timestamp": "2026-09-09T01:54:01.020947",
+      "dna_hash": "7a08587c80572fec",
+      "generation": 1,
+      "mutation_count": 13,
+      "rarity_score": 28.333333333333332,
+      "traits": {
+        "body_color": "beige",
+        "face_expression": "legendary",
+        "accessory": "none",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "glow"
+      },
+      "story": "Your dog evolved! Changes: special: shadow \u2192 glow"
     }
   ]
 }
