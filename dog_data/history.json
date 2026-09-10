@@ -4831,6 +4831,22 @@
         "special": "glow"
       },
       "story": "Your dog evolved! Changes: special: shadow \u2192 glow"
+    },
+    {
+      "timestamp": "2026-09-10T01:50:12.634545",
+      "dna_hash": "093906a3183595cf",
+      "generation": 1,
+      "mutation_count": 16,
+      "rarity_score": 28.333333333333332,
+      "traits": {
+        "body_color": "beige",
+        "face_expression": "legendary",
+        "accessory": "sunglasses",
+        "pattern": "hearts",
+        "background": "green_grass",
+        "special": "none"
+      },
+      "story": "Your dog evolved! Changes: accessory: none \u2192 sunglasses, special: glow \u2192 none"
     }
   ]
 }
