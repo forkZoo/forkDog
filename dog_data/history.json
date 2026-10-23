@@ -5535,6 +5535,22 @@
         "special": "none"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-10-23T02:19:08.827278",
+      "dna_hash": "6bb23ce924f86296",
+      "generation": 1,
+      "mutation_count": 20,
+      "rarity_score": 30.0,
+      "traits": {
+        "body_color": "holographic",
+        "face_expression": "cool",
+        "accessory": "bow",
+        "pattern": "gradient",
+        "background": "mountains",
+        "special": "glow"
+      },
+      "story": "Your dog evolved! Changes: special: none \u2192 glow"
     }
   ]
 }
