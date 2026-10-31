@@ -1,8 +1,8 @@
 {
   "generation": 1,
   "parent_id": null,
-  "dna_hash": "38e741d18b74d56a",
-  "mutation_count": 23,
+  "dna_hash": "c3a57c1de3795de3",
+  "mutation_count": 25,
   "birth_timestamp": 92007,
   "traits": {
     "body_color": {
@@ -16,9 +16,9 @@
       "gene_sequence": "abb5bfe3"
     },
     "accessory": {
-      "value": "crown",
+      "value": "sunglasses",
       "rarity": "uncommon",
-      "gene_sequence": "fa89ebac"
+      "gene_sequence": "128d27c9"
     },
     "pattern": {
       "value": "gradient",
@@ -26,9 +26,9 @@
       "gene_sequence": "8f053269"
     },
     "background": {
-      "value": "mountains",
+      "value": "forest",
       "rarity": "uncommon",
-      "gene_sequence": "ec41435d"
+      "gene_sequence": "edc1a4e4"
     },
     "special": {
       "value": "glow",
