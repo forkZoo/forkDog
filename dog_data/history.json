@@ -5823,6 +5823,22 @@
         "special": "shadow"
       },
       "story": "Your dog evolved! Changes: body_color: holographic \u2192 green"
+    },
+    {
+      "timestamp": "2026-11-10T04:59:18.789635",
+      "dna_hash": "2039fb85c1278b23",
+      "generation": 1,
+      "mutation_count": 32,
+      "rarity_score": 23.333333333333332,
+      "traits": {
+        "body_color": "green",
+        "face_expression": "cool",
+        "accessory": "sunglasses",
+        "pattern": "gradient",
+        "background": "forest",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: pattern: spots \u2192 gradient"
     }
   ]
 }

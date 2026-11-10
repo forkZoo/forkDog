@@ -1,8 +1,8 @@
 {
-  "dna_hash": "c6f3701ba2fb9150",
+  "dna_hash": "2039fb85c1278b23",
   "generation": 1,
   "age_days": 0,
-  "mutation_count": 31,
+  "mutation_count": 32,
   "rarity_score": 23.333333333333332,
   "parent_id": null,
   "traits": {
@@ -19,7 +19,7 @@
       "rarity": "uncommon"
     },
     "pattern": {
-      "value": "spots",
+      "value": "gradient",
       "rarity": "common"
     },
     "background": {
@@ -31,5 +31,5 @@
       "rarity": "uncommon"
     }
   },
-  "last_updated": "2026-11-09T03:23:51.489393"
+  "last_updated": "2026-11-10T04:59:18.788194"
 }
