@@ -5855,6 +5855,22 @@
         "special": "shadow"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-11-12T04:41:02.547485",
+      "dna_hash": "4efd04b855ca5a6f",
+      "generation": 1,
+      "mutation_count": 33,
+      "rarity_score": 25.0,
+      "traits": {
+        "body_color": "green",
+        "face_expression": "cool",
+        "accessory": "sunglasses",
+        "pattern": "hearts",
+        "background": "forest",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: pattern: gradient \u2192 hearts"
     }
   ]
 }
