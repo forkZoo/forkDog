@@ -6063,6 +6063,22 @@
         "special": "sparkles"
       },
       "story": "Your dog rested today. No visible changes."
+    },
+    {
+      "timestamp": "2026-11-25T05:54:06.053305",
+      "dna_hash": "d6b61e6274f6390b",
+      "generation": 1,
+      "mutation_count": 40,
+      "rarity_score": 31.666666666666664,
+      "traits": {
+        "body_color": "holographic",
+        "face_expression": "neutral",
+        "accessory": "sunglasses",
+        "pattern": "swirls",
+        "background": "city",
+        "special": "sparkles"
+      },
+      "story": "Your dog rested today. No visible changes."
     }
   ]
 }
