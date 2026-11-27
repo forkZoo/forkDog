@@ -6095,6 +6095,22 @@
         "special": "shadow"
       },
       "story": "Your dog evolved! Changes: special: sparkles \u2192 shadow"
+    },
+    {
+      "timestamp": "2026-11-27T05:40:10.247756",
+      "dna_hash": "ce79d7f5bafbde77",
+      "generation": 1,
+      "mutation_count": 42,
+      "rarity_score": 31.666666666666664,
+      "traits": {
+        "body_color": "holographic",
+        "face_expression": "neutral",
+        "accessory": "sunglasses",
+        "pattern": "hearts",
+        "background": "city",
+        "special": "shadow"
+      },
+      "story": "Your dog evolved! Changes: pattern: swirls \u2192 hearts"
     }
   ]
 }
